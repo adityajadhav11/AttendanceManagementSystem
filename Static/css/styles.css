@@ -1,0 +1,108 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Background color */
+body {
+    background: #e9e5dd; /* Updated to #e9e5dd */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Text color updated to black for better contrast */
+}
+
+/* Main container for content */
+.container {
+    background: #393e46; /* Second color */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Header styling */
+h1, h2 {
+    margin: 0 0 15px;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation link styling */
+.nav-link {
+    display: inline-block;
+    background: #f96d00; /* Third color */
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for navigation links */
+.nav-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Add spacing for the list items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+form input, form select, form button {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Form button color */
+form button {
+    background: #f96d00; /* Third color */
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+table th {
+    background: #f2f2f2; /* Fourth color */
+}
+
+table tr:nth-child(even) {
+    background: #f2f2f2; /* Fourth color */
+}
+

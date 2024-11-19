@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Main content container -->
+    <div class="container">
+        <h1>Welcome to the Attendance Management System</h1>
+        
+
+        <!-- Navigation Links -->
+        <ul>
+            <li><a href="{{ url_for('add_student') }}" class="nav-link">Add Student</a></li>
+            <li><a href="{{ url_for('add_subject') }}" class="nav-link">Add Subject</a></li>
+            <li><a href="{{ url_for('mark_attendance') }}" class="nav-link">Mark Attendance</a></li>
+            <li><a href="{{ url_for('view_attendance') }}" class="nav-link">View Attendance</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

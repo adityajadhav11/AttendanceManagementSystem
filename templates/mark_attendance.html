@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Mark Attendance</h1>
+    <form method="POST">
+        <label for="subject_id">Select Subject:</label>
+        <select name="subject_id" id="subject_id">
+            {% for subject in subjects %}
+                <option value="{{ subject.id }}">{{ subject.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <h3>Select Students Present:</h3>
+        {% for student in students %}
+            <label>
+                <input type="checkbox" name="present" value="{{ student.id }}">
+                {{ student.name }}
+            </label><br>
+        {% endfor %}
+
+        <h3>Select Students Absent:</h3>
+        {% for student in students %}
+            <label>
+                <input type="checkbox" name="absent" value="{{ student.id }}">
+                {{ student.name }}
+            </label><br>
+        {% endfor %}
+
+        <button type="submit">Submit Attendance</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
